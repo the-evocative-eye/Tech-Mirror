@@ -6,7 +6,6 @@ This is the tech news website where you can search about different sort of techn
 # Technologies used in this project
 EJS
 CSS
-Vanilla Javascrip
+Vanilla Javascript
 NodeJs
-ExpressJs
 mongoDB
