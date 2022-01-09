@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js News</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light badge-dark">
+        <p class="navbar-brand"style="font-weight: bold;color: blanchedalmond;">Tech <br> Mirror</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/signup" style="color: blanchedalmond;">SignUp <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/audio" style="color: blanchedalmond;">Audio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/chat" style="color: blanchedalmond;">Chat</a>
+              </li>
+            </ul>
+            <form action="/" method="POST" class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search for news" name="search" required>
+              <input class="btn btn-primary my-2 my-sm-0" type="submit" value="Search"></input>
+            </form>
+        </div>
+    </nav>
+      <div class="wrapper">
+       <div class="news">
+           <% if(articles != null){ %>
+    <% articles.forEach(function(article,index) { %>
+        <a href="/article/<%- article.id %>" class="news__card">
+            <img src="<%- article.thumbnail_url %>" alt="<%- article.title.rendered %>">
+<h2><%- article.title.rendered %></h2>
+<p><%- article.excerpt.rendered %></p>
+ </a>
+   <% }) %>
+<% }else{ %>
+No posts found.
+<% } %>
+</div>
+</div>
+<script src="./js/audio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light badge-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/about"  style="color: blanchedalmond;margin-left:600px;">About Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact"  style="color: blanchedalmond;">Contact</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/ebook"  style="color: blanchedalmond;">eBook</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+</body>
+</html>
+
+
+

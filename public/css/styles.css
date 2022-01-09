@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #f6f6f6;
+  inline-size: 2.5;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  padding: 0 1rem;
+}
+
+.news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 2rem;
+}
+
+.news__card {
+  text-decoration: none;
+  color: #080808;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.news__card:hover {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+.news-single {
+  background-color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.one {
+  text-align: left;
+  height: 600px;
+  font-size: 22px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.one-one {
+  text-align: center;
+  margin-top: 20px;
+  font-style: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 40px;
+  color: black;
+}
+
+/*about*/
+.two {
+  text-align: left;
+  height: 600px;
+  font-size: 22px;
+  padding: 20px;
+}
+
+.two-two {
+  text-align: center;
+  margin: 20px;
+  font-style: bold;
+  font-size: 60px;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.card {
+  float: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin: 73px;
+  border: 2px solid whitesmoke;
+}
+
+.card-img-top {
+  padding: 8px;
+}
+
+div.card:hover {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+/*contact*/
+.four {
+  height: 600px;
+  font-size: 22px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.four-four {
+  margin: 10px;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.ebook1 {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.ebook3 {
+  color: black;
+}
+
+.ebook2 {
+  list-style: disc;
+  text-align: left;
+  padding: 6px;
+}
+
+.ebook3:hover {
+  color: #343434;
+  text-decoration: none;
+}
+
+/*ebook*/
+.three {
+  height: 750px;
+  font-size: 22px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.three-three {
+  margin: 10px;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.audio1 {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+}
+
+.audio {
+  list-style: disc;
+  text-align: left;
+  padding: 6px;
+}
+
+.btn {
+  color: black;
+  margin: 10px;
+}
+
+/*audio*/
+.signup {
+  color: black;
+  font-family: sans-serif;
+  background: linear-gradient(110deg, black 60%, whitesmoke 60%);
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-form {
+  width: 300px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background-color: blue;
+  text-align: center;
+  padding: 20px;
+  margin: 200px 600px;
+}
+
+.signup-btn {
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px;
+  margin: 15px;
+  border: 2px solid black;
+}
+
+.signup-btn:hover {
+  background-color: rgba(0, 0, 0, 0.904);
+}
+
+.input-box {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 3px;
+  width: 80%;
+  outline: none;
+}
+
+.newsquora {
+  text-shadow: 2px 2px 5px whitesmoke;
+}
+/*# sourceMappingURL=styles.css.map */
